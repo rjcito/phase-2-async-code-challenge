@@ -7,7 +7,7 @@ function MovieContainer() {
   return (
     <div>
       <h1>Watchlist</h1>
-      <Search />
+      <Search /><br/>
       <Filter />
       {/* render a list of <MovieCard> components in here */} 
     </div>
