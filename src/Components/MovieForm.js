@@ -1,6 +1,6 @@
 import React from "react";
 
-function Form() {
+function MovieForm() {
   return (
     <form className="new-movie-form">
         <h3>Add Movie</h3>
@@ -22,4 +22,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default MovieForm;
