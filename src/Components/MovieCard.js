@@ -1,6 +1,8 @@
 import React from "react";
+import { useState } from 'react'
 
 function MovieCard() {
+  const [comments, setComments] = useState([])
   return (
     <div>
       <h3>Title</h3>
@@ -9,6 +11,7 @@ function MovieCard() {
         <strong>Description</strong>
       </p>
       <button>Mark as watched</button>
+      <Comments comments={comments} setComments={setComments}/>
     </div>
   );
 }
