@@ -1,5 +1,5 @@
 import MovieContainer from "./Components/MovieContainer";
-import Form from "./Components/MovieForm";
+import MovieForm from "./Components/MovieForm";
 import Home from "./Components/Home";
 import './App.css';
 import {
@@ -15,8 +15,8 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<Home/>}/>
-        {/* Add route /movies, which renders <MovieContainer/>
-        Add route /movies/new, which renders <MovieForm/> */}
+        {/* Add route "/movies", which renders <MovieContainer/>
+        Add route "/movies/new", which renders <MovieForm/> */}
       </Routes>
       
     </div>
