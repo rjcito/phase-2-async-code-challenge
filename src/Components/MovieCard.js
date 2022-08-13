@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from 'react'
+import Comments from './Comments'
 
 function MovieCard() {
   const [comments, setComments] = useState([])
