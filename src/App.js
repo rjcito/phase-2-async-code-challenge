@@ -5,18 +5,21 @@ import './App.css';
 import {
   Routes,
   Route,
+
 } from "react-router-dom";
 
 
+
 function App() {
+  
 
 
   return (
     <div className="app">
       <Routes>
         <Route path="/" element={<Home/>}/>
-        {/* Add route "/movies", which renders <MovieContainer/>
-        Add route "/movies/new", which renders <MovieForm/> */}
+        <Route path ="/movies" element ={<MovieContainer/>}/>
+        <Route path ="/movies/new" element ={<MovieForm/>}/>
       </Routes>
       
     </div>
