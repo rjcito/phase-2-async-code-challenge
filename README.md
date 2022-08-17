@@ -13,7 +13,7 @@
 # Directions for submitting
 - Make your final commit and push to github
 - Create a small youtube video explaining your code and showing that it works.
-- Fill out this form
+- Fill out this [form](https://forms.gle/ueto431kq6dB7ySH7)
 - Ping your instructor
 Best of luck!
 
