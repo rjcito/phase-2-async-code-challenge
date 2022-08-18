@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
 import Filter from "./Filter";
 import Search from "./Search";
-import { ListItem } from "@mui/material";
+
 
 
 function MovieContainer() {
