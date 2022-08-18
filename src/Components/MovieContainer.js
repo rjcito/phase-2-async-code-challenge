@@ -5,14 +5,19 @@ import Search from "./Search";
 
 function MovieContainer({ movies }) {
   
-
+console.log(movies)
 
   return (
     <div>
       <h1>Watchlist</h1>
       <Search /><br/>
       <Filter />
-      {/*Render movies here using map */} 
+      {movies.map((movie) => (
+        <MovieCard
+          key={movie.id}
+          movie={movie}
+        />
+      ))} 
     </div>
   );
 }

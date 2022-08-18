@@ -4,13 +4,13 @@ import MovieContainer from './MovieContainer'
 
 
 export default function Home() {
-  const [movies, setMovies] = useState(null)
+  const [movies, setMovies] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3001/movies')
+    fetch("http://localhost:3001/movies")
       .then(response => response.json())
-      .then(data => 
-        setMovies(data))
+      .then(data => setMovies(data))
+      
 
 
   },[])
@@ -23,9 +23,10 @@ export default function Home() {
   return (
     <div>
         <h1>Welcome to Watchlist!</h1>
-        <MovieContainer movies={movies}/>
         <Link to="/movies">Movies</Link><br/>
         <Link to ="/movies/new">New Movie</Link>
+        <MovieContainer movies={movies} />
+        
     </div>
     
   )
