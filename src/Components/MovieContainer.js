@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
 import Filter from "./Filter";
 import Search from "./Search";
 
-function MovieContainer({ movies }) {
+function MovieContainer() {
+  const [movies, setMovies] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:3001/movies")
+      .then(response => response.json())
+      .then(data => setMovies(data))
+      
+
+
+  },[])
   
-console.log(movies)
+
 
   return (
     <div>
